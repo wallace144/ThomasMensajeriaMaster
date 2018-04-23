@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Thomas Mensageria</string>
+    <string name="login.message.mail">Usuario</string>
+    <string name="login.message.password">Contraseña</string>
+    <string name="login.button.signin">Iniciar sesión</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="login.error.message.signin">Imposible iniciar sesion %s</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="contactlist.menu.action.signoff">Cerrar sesión</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="main_profile_update_notice">Error al cargar los datos %s</string>
+
+    <string name="menu.icon.main">Inicio</string>
+    <string name="menu.icon.get.route">Obtener ruta</string>
+    <string name="menu.icon.validate.route">Validar ruta</string>
+    <string name="menu.icon.services.route">Ruta servicios</string>
+    <string name="menu.icon.summary.route">Resumen ruta</string>
+    <string name="menu.icon.close.route">Cierre ruta</string>
+    <string name="title_activity_get_route">Obtener ruta</string>
+
+
+</resources>

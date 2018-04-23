@@ -1,0 +1,112 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/fragment_vertical_margin_top"
+    android:layout_marginLeft="@dimen/fragment_horizontal_margin"
+    android:layout_marginRight="@dimen/fragment_horizontal_margin"
+    android:orientation="vertical"
+    tools:context="co.udistrital.android.thomasmensageria.validate_route.ValidateRouteFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvRoute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Ruta:"
+
+                />
+            <TextView
+                android:id="@+id/tvRouteCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0020171253-140319"
+                android:layout_alignParentTop="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Fecha: "/>
+
+            <TextView
+                android:id="@+id/tvDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2014/03/19"
+                android:ems="12"
+                android:layout_alignTop="@+id/tvRouteCode"
+                android:layout_toRightOf="@+id/tvRouteCode"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Codigo: " />
+
+            <EditText
+                android:id="@+id/tvCodeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="09"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/ivCodigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4sp"
+                android:src="@drawable/bar" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresa Codigo"/>
+
+        <ScrollView
+            android:id="@+id/ScrollView01"
+            android:layout_width="wrap_content"
+            android:layout_height="150dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Codigo Faltante"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

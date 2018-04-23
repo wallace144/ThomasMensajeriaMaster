@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/main"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:title="@string/menu.icon.main">
+    </item>
+    <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/get_route"
+                android:icon="@drawable/obtener_ruta"
+                android:title="@string/menu.icon.get.route" />
+            <item
+                android:id="@+id/validate_route"
+                android:icon="@drawable/validar_ruta"
+                android:title="@string/menu.icon.validate.route" />
+            <item
+                android:id="@+id/services_route"
+                android:icon="@drawable/ruta_servicio"
+                android:title="@string/menu.icon.services.route" />
+            <item
+                android:id="@+id/summary_route"
+                android:icon="@drawable/resumen_ruta"
+                android:title="@string/menu.icon.summary.route" />
+    </group>
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/close_route"
+                android:icon="@drawable/close_route"
+                android:title="@string/menu.icon.close.route" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
