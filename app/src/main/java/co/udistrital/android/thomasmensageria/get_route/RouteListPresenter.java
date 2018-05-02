@@ -1,5 +1,7 @@
 package co.udistrital.android.thomasmensageria.get_route;
 
+import android.content.Intent;
+
 import co.udistrital.android.thomasmensageria.entities.Route;
 import co.udistrital.android.thomasmensageria.get_route.events.RouteListEvent;
 
@@ -19,5 +21,5 @@ public interface RouteListPresenter {
     void onEventMainThread(RouteListEvent event);
 
 
-
+    void validateGuia(int id_guia, Intent intent);
 }

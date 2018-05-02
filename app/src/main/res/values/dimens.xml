@@ -16,4 +16,7 @@
     
     <dimen name="profile_imagen_size">65dp</dimen>
     <dimen name="profile_border_width">1dp</dimen>
+
+    <dimen name="card_margin">1dp</dimen>
+    <dimen name="card_album_radius">0dp</dimen>
 </resources>

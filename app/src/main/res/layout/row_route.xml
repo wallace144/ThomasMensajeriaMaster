@@ -1,108 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    android:orientation="vertical">
+    android:layout_marginTop="@dimen/card_margin"
+    android:layout_marginBottom="@dimen/card_margin"
+    android:elevation="-3dp"
+    card_view:cardCornerRadius="@dimen/card_album_radius">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="52dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="GUIA : "
-            android:textStyle="bold"
-            android:id="@+id/tvGuide"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
-            android:text="1212121"
-            android:id="@+id/txtGuide"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_marginStart="22dp"
-            android:text="CLIENTE: "
-            android:textStyle="bold"
-            android:id="@+id/tvClient"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Cliente"
-            android:id="@+id/txtClient"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/tvAddress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/txtClient"
-            android:layout_marginStart="22dp"
-            android:textStyle="bold"
-            android:text="DIRECCION:  "
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <TextView
-            android:id="@+id/txtAddress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/txtClient"
-            android:text="Direccion"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/tVDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/txtAddress"
-            android:layout_below="@+id/txtAddress"
-            android:layout_marginStart="22dp"
-            android:textStyle="bold"
-            android:text="FECHA ENTREGA:  "
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <TextView
-            android:id="@+id/txtDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/txtAddress"
-            android:layout_below="@+id/txtAddress"
-            android:text="Fecha"
-            android:textAppearance="?android:attr/textAppearanceSmallPopupMenu" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="1"
+        android:layout_marginRight="8dp"
+        android:layout_alignBaseline="@+id/txtDate"
+        android:textStyle="bold"
+        android:id="@+id/tvGuide"/>
 
 
-    </LinearLayout>
+    <!-- icon -->
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/bar"
+        />
 
+    <!-- title -->
+    <TextView
+        android:id="@+id/txtGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_icon"
+        android:layout_alignBaseline="@+id/txtDate"
+        android:text="prueba"
+        android:textSize="18dp" />
 
+    <!-- counter -->
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:paddingTop="8dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
-
-
-</LinearLayout>
+</RelativeLayout>
+</android.support.v7.widget.CardView>

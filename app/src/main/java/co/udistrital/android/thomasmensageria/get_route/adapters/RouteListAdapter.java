@@ -38,9 +38,11 @@ public class RouteListAdapter extends RecyclerView.Adapter<RouteListAdapter.View
         Route route = routeList.get(position);
         holder.setClickListener(route, onItemClickListener);
 
+
+        holder.tvGuide.setText(""+(position+1));
         holder.txtGuide.setText(""+route.getId_guia());
-        holder.txtClient.setText(""+route.getIdproducto());
-        holder.txtAddress.setText(route.getDireccion());
+        //holder.txtClient.setText(""+route.getIdproducto());
+        //holder.txtAddress.setText(route.getDireccion());
         holder.txtDate.setText(route.getFecha_envio());
     }
 
@@ -74,12 +76,14 @@ public class RouteListAdapter extends RecyclerView.Adapter<RouteListAdapter.View
 
     static class ViewHolder extends RecyclerView.ViewHolder {
 
+        @BindView(R.id.tvGuide)
+        TextView tvGuide;
         @BindView(R.id.txtGuide)
         TextView txtGuide;
-        @BindView(R.id.txtClient)
-        TextView txtClient;
-        @BindView(R.id.txtAddress)
-        TextView txtAddress;
+        //@BindView(R.id.txtClient)
+        //TextView txtClient;
+        //@BindView(R.id.txtAddress)
+        //TextView txtAddress;
         @BindView(R.id.txtDate)
         TextView txtDate;
         private View view;

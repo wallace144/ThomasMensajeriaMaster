@@ -23,13 +23,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerViewRoute"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="vertical"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:layout_margin="@dimen/activity_horizontal_margin"/>
 
     <ProgressBar
         android:layout_width="wrap_content"
@@ -37,6 +30,59 @@
         android:id="@+id/progressBar"
         android:visibility="gone"
         android:layout_gravity="center"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="145dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#"
+        android:layout_alignBaseline="@+id/tDate"
+        android:layout_marginRight="54dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:id="@+id/tGuide"/>
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/treference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tGuide"
+        android:layout_alignBaseline="@+id/tDate"
+        android:text="GUIA"
+        android:textStyle="bold"
+        android:textSize="18dp" />
+
+    <!-- counter -->
+    <TextView
+        android:id="@+id/tDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="FECHA ENTREGA"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingTop="20dp"
+        android:layout_margin="@dimen/fragment_horizontal_margin"/>
+
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

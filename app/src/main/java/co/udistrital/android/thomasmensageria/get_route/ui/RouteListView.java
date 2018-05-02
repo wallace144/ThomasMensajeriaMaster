@@ -18,4 +18,5 @@ public interface RouteListView {
     void onRouteRemoved(Route route);
     void onRouteError(String error);
 
+    void changedState();
 }

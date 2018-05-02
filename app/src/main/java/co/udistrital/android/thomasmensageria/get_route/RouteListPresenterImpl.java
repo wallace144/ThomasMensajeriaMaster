@@ -1,5 +1,7 @@
 package co.udistrital.android.thomasmensageria.get_route;
 
+import android.content.Intent;
+
 import org.greenrobot.eventbus.Subscribe;
 
 import co.udistrital.android.thomasmensageria.entities.Route;
@@ -74,6 +76,17 @@ public class RouteListPresenterImpl implements RouteListPresenter {
                 break;
         }
     }
+
+    @Override
+    public void validateGuia(int id_guia, Intent intent) {
+        String contents = intent.getStringExtra("SCAN_RESULT").trim();
+        if (contents.equals(""+id_guia))
+            view.changedState();
+        else
+            view.onRouteError("Codigo de Barras Diferente");
+
+    }
+
 
     public void onAddRoute(Route route) {
         if (view != null){
